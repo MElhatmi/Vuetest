@@ -82,9 +82,10 @@ export default {
 <style>
 .main-section-personal-information {
   background-color: #ffffff;
+
   /* min-width: 300px;*/
   width: 40%;
   border-radius: 7px;
-  padding-bottom: 10px;
+  /*padding-bottom: 10px;*/
 }
 </style>

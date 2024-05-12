@@ -73,15 +73,17 @@ export default {
   margin-bottom: 15px;
   border-radius: 7px;
 }
-.plus-padding {
-  padding: 30px 0;
-}
+/*.plus-padding {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}*/
 .bottom-padding {
   padding-bottom: 20px;
 }
 .main-section-information-item-info-nontextual {
   padding-left: 22px;
-  padding-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 .main-section-information-left-profile {
   width: 100%;

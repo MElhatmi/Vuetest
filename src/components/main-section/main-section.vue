@@ -67,7 +67,7 @@ export default {
   color: #383838;
 }
 .main-section-item {
-  padding: 10px 32px 10px calc(10px + 1vw);
+  padding: 10px calc(10px + 0.5vw) 10px calc(10px + 0.5vw);
   display: flex;
   justify-content: space-between;
   align-items: center;
