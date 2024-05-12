@@ -123,7 +123,7 @@ export default {
   }
 
   .top-section-container {
-    min-width: 85%;
+    min-width: 90%;
   }
 }
 </style>

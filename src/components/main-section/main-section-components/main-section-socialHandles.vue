@@ -61,7 +61,7 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
   padding: 0 0 20px 0;
-  gap: calc(10px + 0.5vw);
+  gap: calc(10px + 1vw);
 }
 .main-section-socialHandle {
   text-align: center;

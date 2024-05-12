@@ -98,7 +98,7 @@ export default {
   .main-section {
     flex-wrap: wrap;
     justify-content: center;
-    min-width: 85%;
+    min-width: 90%;
   }
   .main-section-personal-information {
     width: 100%;

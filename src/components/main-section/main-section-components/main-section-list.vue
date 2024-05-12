@@ -63,7 +63,7 @@ export default {
         {
           icon: EmailIcon,
           description: "Email",
-          info: "jessicalewis@jesiccalewis.com",
+          info: "jessica@gmail.com",
         },
         { icon: PhoneIcon, description: "Phone", info: "+971 53837234" },
         { icon: WhatsappIcon, description: "Whatsapp", info: "+971 53837234" },
