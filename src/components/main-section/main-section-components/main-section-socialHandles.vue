@@ -61,13 +61,17 @@ export default {
   justify-content: center;
   flex-wrap: wrap;
   padding: 0 0 20px 0;
-  gap: calc(10px + 1vw);
+  gap: calc(10px + 0.5vw);
 }
 .main-section-socialHandle {
   text-align: center;
   font-size: 13px;
   color: #777777;
 }
+.main-section-socialHandles-wrapper {
+  padding: 0 calc(10px + 0.5vw);
+}
+
 .main-section-socialHandle-description {
   padding-bottom: 10px;
 }
