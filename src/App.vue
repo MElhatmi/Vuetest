@@ -1,16 +1,14 @@
 <template>
-  <topSection />
-  <mainSection />
+  <fullpageLayout />
 </template>
 
 <script>
-import mainSection from "./components/main-section/main-section.vue";
-import topSection from "./components/top-section/top-section.vue";
+import fullpageLayout from "./components/fullpage-layout.vue";
+
 export default {
   name: "App",
   components: {
-    topSection,
-    mainSection,
+    fullpageLayout,
   },
 };
 </script>

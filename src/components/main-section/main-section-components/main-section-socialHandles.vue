@@ -54,9 +54,10 @@ export default {
 <style>
 .main-section-socialHandles {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  padding: 0 30px 50px 30px;
-  gap: calc(15px + 1vw);
+  padding: 0 calc(10px + 0.5vw) 20px calc(10px + 0.5vw);
+  gap: calc(10px + 0.5vw);
 }
 .main-section-socialHandle {
   text-align: center;

@@ -1,22 +1,26 @@
 <template>
   <section class="top-section">
-    <div class="top-section-profile">
-      <profileImage />
-      <div class="top-section-profile-info">
-        <div class="top-section-profile-name">Jessica Lewis</div>
-        <div class="top-section-profile-instagram">
-          <topsectionInstagram />
-          <div>Jessica Lewis</div>
-        </div>
-        <div class="top-section-profile-instagram-followers">
-          100K - 500K followers
+    <div class="emptyspace"></div>
+    <div class="top-section-container">
+      <div class="top-section-profile">
+        <profileImage />
+        <div class="top-section-profile-info">
+          <div class="top-section-profile-name">Jessica Lewis</div>
+          <div class="top-section-profile-instagram">
+            <topsectionInstagram />
+            <div>Jessica Lewis</div>
+          </div>
+          <div class="top-section-profile-instagram-followers">
+            100K - 500K followers
+          </div>
         </div>
       </div>
+      <ul class="top-section-tabs">
+        <li class="top-section-tab-element active">User Details</li>
+        <li class="top-section-tab-element">Analytics</li>
+      </ul>
     </div>
-    <ul class="top-section-tabs">
-      <li class="top-section-tab-element">User Details</li>
-      <li class="top-section-tab-element">Analytics</li>
-    </ul>
+    <div class="emptyspace"></div>
   </section>
 </template>
 
@@ -33,9 +37,22 @@ export default {
 </script>
 
 <style>
+.top-section-container {
+  margin-top: 2rem;
+  flex-shrink: 0;
+  flex-basis: 60%;
+  min-width: min(700px, 90%);
+  /*padding-top: 60px;
+  width: 80%;
+  margin: auto;*/
+}
 .top-section {
   /*height: 25%;*/
-  padding: calc(20px + 3vh) calc(50px + 15vw) 0 calc(50px + 15vw);
+  /*padding: calc(20px + 3vh) calc(50px + 15vw) 0 calc(50px + 15vw);*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: #fdfdfd;
 }
 .top-section-profile {
@@ -72,10 +89,10 @@ export default {
   position: relative;
   padding-bottom: 22px;
 }
-.top-section-tabs li:hover {
+/*.top-section-tabs li:hover {
   color: #00a4b6;
-}
-.top-section-tabs li:hover::after {
+}*/
+.top-section-tabs li .active {
   content: "";
   position: absolute;
   bottom: 0;
@@ -97,11 +114,16 @@ export default {
   .top-section-profile-info {
     padding-left: 0;
   }
-  .top-section {
-    padding-left: 10%;
-  }
+  /*.top-section {
+    padding-right: calc(15px + 1vw);
+    padding-left: calc(15px + 1vw);
+  }*/
   .top-section {
     background-image: linear-gradient(to bottom, #caeaee 30%, transparent 30%);
+  }
+
+  .top-section-container {
+    min-width: 85%;
   }
 }
 </style>

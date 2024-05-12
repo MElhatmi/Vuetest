@@ -1,5 +1,6 @@
 <template>
   <div class="main-section-container">
+    <div class="emptyspace"></div>
     <main class="main-section">
       <section class="main-section-personal-information">
         <mainSectionList />
@@ -11,6 +12,7 @@
         <section class="main-section-social-handles"><socialHandles /></section>
       </section>
     </main>
+    <div class="emptyspace"></div>
   </div>
 </template>
 
@@ -29,18 +31,30 @@ export default {
 </script>
 
 <style>
+.active {
+  color: #00a4b6;
+  border-bottom: solid 0.3rem;
+}
 .main-section-container {
+  /* width: 80%;
+  margin: 2rem auto;*/
+  margin: 2rem 0;
   display: flex;
   justify-content: center;
-  padding: 30px calc(50px + 15vw) 30px calc(50px + 15vw);
+  align-items: center;
+  width: 100%;
 }
 .main-section {
+  flex-shrink: 0;
+  flex-basis: 60%;
+  min-width: min(700px, 90%);
   display: flex;
-  gap: calc(10px + 2vw);
+  gap: 15px;
+  margin-bottom: 2rem;
 }
 .main-section-profileAndSocial-information {
-  min-width: 200px;
-  width: calc(220px + 23vw);
+  /* min-width: 375px;*/
+  width: 60%;
 }
 .main-section-social-handles {
   background-color: #ffffff;
@@ -53,7 +67,7 @@ export default {
   color: #383838;
 }
 .main-section-item {
-  padding: 10px 32px 10px 40px;
+  padding: 10px 32px 10px calc(10px + 1vw);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -67,14 +81,14 @@ export default {
   gap: 10px;
 }
 .main-section-information-item-info {
-  padding-left: 25px;
+  padding-left: 22px;
   padding-top: 5px;
   color: #181818;
   font-size: 16px;
   word-wrap: break-word;
 }
 .main-section-information-left {
-  width: 100%;
+  width: 80%;
 }
 .main-section-information-content {
   color: #828080;
@@ -84,6 +98,7 @@ export default {
   .main-section {
     flex-wrap: wrap;
     justify-content: center;
+    min-width: 85%;
   }
   .main-section-personal-information {
     width: 100%;
@@ -91,10 +106,6 @@ export default {
   .main-section-profileAndSocial-information {
     min-width: 200px;
     width: 100%;
-  }
-  .main-section-container {
-    padding-right: calc(15px + 1vw);
-    padding-left: calc(15px + 1vw);
   }
 }
 </style>

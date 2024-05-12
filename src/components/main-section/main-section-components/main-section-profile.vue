@@ -2,7 +2,7 @@
   <div class="main-section-headers">Profile Information</div>
   <ul class="main-section-list">
     <li class="main-section-item plus-padding">
-      <div class="main-section-information-left">
+      <div class="main-section-information-left-profile">
         <div class="main-section-information-category">
           <SignupIcon />
           <div class="main-section-information-content">Sign up date</div>
@@ -11,29 +11,29 @@
       </div>
     </li>
     <li class="main-section-item">
-      <div class="main-section-information-left">
+      <div class="main-section-information-left-profile">
         <div class="main-section-information-category">
           <ProfileCompletionIcon />
           <div class="main-section-information-content">Profile Completion</div>
         </div>
-        <div class="main-section-information-item-info">
+        <div class="main-section-information-item-info-nontextual">
           <profileCompletionBar :progress="50" />
         </div>
       </div>
     </li>
     <li class="main-section-item">
-      <div class="main-section-information-left">
+      <div class="main-section-information-left-profile">
         <div class="main-section-information-category">
           <InfluencerTypeIcon />
           <div class="main-section-information-content">Influencer Type</div>
         </div>
-        <div class="main-section-information-item-info">
+        <div class="main-section-information-item-info-nontextual">
           <InfluencerTypeList />
         </div>
       </div>
     </li>
     <li class="main-section-item">
-      <div class="main-section-information-left bottom-padding">
+      <div class="main-section-information-left-profile bottom-padding">
         <div class="main-section-information-category">
           <InfluencerCategoryIcon />
           <div class="main-section-information-content">
@@ -78,5 +78,12 @@ export default {
 }
 .bottom-padding {
   padding-bottom: 20px;
+}
+.main-section-information-item-info-nontextual {
+  padding-left: 22px;
+  padding-top: 15px;
+}
+.main-section-information-left-profile {
+  width: 100%;
 }
 </style>
