@@ -1,18 +1,17 @@
 <template>
   <div class="main-section-headers">Social Handles</div>
-  <div class="main-section-socialHandles-wrapper">
-    <div class="main-section-socialHandles">
-      <div
-        class="main-section-socialHandle"
-        v-for="social in socialHandles"
-        :key="social.description"
-      >
-        <div>
-          <component :is="social.icon" />
-        </div>
-        <div class="main-section-socialHandle-description">
-          {{ social.description }}
-        </div>
+
+  <div class="main-section-socialHandles">
+    <div
+      class="main-section-socialHandle"
+      v-for="social in socialHandles"
+      :key="social.description"
+    >
+      <div>
+        <component :is="social.icon" />
+      </div>
+      <div class="main-section-socialHandle-description">
+        {{ social.description }}
       </div>
     </div>
   </div>
@@ -57,22 +56,24 @@ export default {
 
 <style>
 .main-section-socialHandles {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 0 0 20px 0;
+  margin: 0 auto;
+  /*padding: 0 calc(15px + 1vw) 20px calc(15px + 1vw);*/
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(80px, 1fr)
+  ); /* Adjust as needed */ /* Start from the left */
   gap: calc(10px + 0.5vw);
+  width: 85%;
+  /* max-width: 1000px; */ /* Example max-width for centering */
+  /* Center the grid horizontally */
 }
 .main-section-socialHandle {
   text-align: center;
   font-size: 13px;
   color: #777777;
 }
-.main-section-socialHandles-wrapper {
-  padding: 0 calc(15px + 1vw);
-}
-
-.main-section-socialHandle-description {
-  padding-bottom: 10px;
-}
+/*.main-section-socialHandles-wrapper {
+  padding: 0 calc(15px + 1vw) 20px calc(15px + 1vw);
+}*/
 </style>

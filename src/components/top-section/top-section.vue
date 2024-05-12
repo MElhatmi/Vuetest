@@ -119,7 +119,7 @@ export default {
     padding-left: calc(15px + 1vw);
   }*/
   .top-section {
-    background-image: linear-gradient(to bottom, #caeaee 30%, transparent 30%);
+    background-image: linear-gradient(to bottom, #caeaee 27%, transparent 27%);
   }
 
   .top-section-container {
