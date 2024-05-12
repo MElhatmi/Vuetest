@@ -37,7 +37,7 @@ export default {
 .progress-bar-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 
 .progress-label {
