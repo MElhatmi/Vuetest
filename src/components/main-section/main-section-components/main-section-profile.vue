@@ -17,7 +17,7 @@
           <div class="main-section-information-content">Profile Completion</div>
         </div>
         <div class="main-section-information-item-info-nontextual">
-          <profileCompletionBar :progress="50" />
+          <profileCompletionBar :progress="78" />
         </div>
       </div>
     </li>

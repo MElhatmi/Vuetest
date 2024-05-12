@@ -1,15 +1,19 @@
 <template>
   <div class="main-section-headers">Social Handles</div>
-  <div class="main-section-socialHandles">
-    <div
-      class="main-section-socialHandle"
-      v-for="social in socialHandles"
-      :key="social.description"
-    >
-      <div>
-        <component :is="social.icon" />
+  <div class="main-section-socialHandles-wrapper">
+    <div class="main-section-socialHandles">
+      <div
+        class="main-section-socialHandle"
+        v-for="social in socialHandles"
+        :key="social.description"
+      >
+        <div>
+          <component :is="social.icon" />
+        </div>
+        <div class="main-section-socialHandle-description">
+          {{ social.description }}
+        </div>
       </div>
-      <div>{{ social.description }}</div>
     </div>
   </div>
 </template>
@@ -56,12 +60,15 @@ export default {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 0 calc(10px + 0.5vw) 20px calc(10px + 0.5vw);
+  padding: 0 0 20px 0;
   gap: calc(10px + 0.5vw);
 }
 .main-section-socialHandle {
   text-align: center;
   font-size: 13px;
   color: #777777;
+}
+.main-section-socialHandle-description {
+  padding-bottom: 10px;
 }
 </style>
