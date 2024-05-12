@@ -65,6 +65,7 @@ export default {
   ); /* Adjust as needed */ /* Start from the left */
   gap: calc(10px + 0.5vw);
   width: 85%;
+  padding-bottom: 30px;
   /* max-width: 1000px; */ /* Example max-width for centering */
   /* Center the grid horizontally */
 }
