@@ -69,7 +69,7 @@ export default {
   color: #777777;
 }
 .main-section-socialHandles-wrapper {
-  padding: 0 calc(10px + 0.5vw);
+  padding: 0 calc(15px + 0.5vw);
 }
 
 .main-section-socialHandle-description {
