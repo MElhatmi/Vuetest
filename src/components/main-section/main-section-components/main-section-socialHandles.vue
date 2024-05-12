@@ -17,6 +17,7 @@
   </div>
 </template>
 <script>
+import { markRaw } from "vue";
 import InstagramSocialHandle from "@/assets/main-section/main-section-socialHandles-Icons/Instagram-socialHandle-Icon.vue";
 import TikTokSocialHandle from "@/assets/main-section/main-section-socialHandles-Icons/TikTok-socialHandle-Icon.vue";
 import SnapchatSocialHandle from "@/assets/main-section/main-section-socialHandles-Icons/Snapchat-socialHandle-Icon.vue";
@@ -29,23 +30,23 @@ export default {
     return {
       socialHandles: [
         {
-          icon: InstagramSocialHandle,
+          icon: markRaw(InstagramSocialHandle),
           description: "jessicalewis",
         },
         {
-          icon: TikTokSocialHandle,
+          icon: markRaw(TikTokSocialHandle),
           description: "jessicalewis",
         },
         {
-          icon: SnapchatSocialHandle,
+          icon: markRaw(SnapchatSocialHandle),
           description: "Snapchat",
         },
         {
-          icon: TwitchSocialHandle,
+          icon: markRaw(TwitchSocialHandle),
           description: "Twitch",
         },
         {
-          icon: YoutubeSocialHandle,
+          icon: markRaw(YoutubeSocialHandle),
           description: "Youtube",
         },
       ],
@@ -64,7 +65,7 @@ export default {
     minmax(80px, 1fr)
   ); /* Adjust as needed */ /* Start from the left */
   gap: calc(10px + 0.5vw);
-  width: 85%;
+  width: 90%;
   padding-bottom: 30px;
 }
 .main-section-socialHandle {

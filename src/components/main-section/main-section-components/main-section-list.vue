@@ -25,6 +25,7 @@
 </template>
 
 <script>
+import { markRaw } from "vue";
 import GenderIcon from "@/assets/main-section/main-section-personal-Icons/GenderIcon.vue";
 import AgeIcon from "@/assets/main-section/main-section-personal-Icons/AgeIcon.vue";
 import BirthdayIcon from "@/assets/main-section/main-section-personal-Icons/BirthdayIcon.vue";
@@ -53,23 +54,35 @@ export default {
         Location: "Business Bay, Dubai - UAE ",
       },
       personal_info_categories: [
-        { icon: GenderIcon, description: "Gender", info: "Female" },
-        { icon: AgeIcon, description: "Age", info: 28 },
+        { icon: markRaw(GenderIcon), description: "Gender", info: "Female" },
+        { icon: markRaw(AgeIcon), description: "Age", info: 28 },
         {
-          icon: BirthdayIcon,
+          icon: markRaw(BirthdayIcon),
           description: "Date of Birth",
           info: "25/08/1994",
         },
         {
-          icon: EmailIcon,
+          icon: markRaw(EmailIcon),
           description: "Email",
           info: "jessica@gmail.com",
         },
-        { icon: PhoneIcon, description: "Phone", info: "+971 53837234" },
-        { icon: WhatsappIcon, description: "Whatsapp", info: "+971 53837234" },
-        { icon: NationalityIcon, description: "Nationality", info: "USA" },
         {
-          icon: LocationIcon,
+          icon: markRaw(PhoneIcon),
+          description: "Phone",
+          info: "+971 53837234",
+        },
+        {
+          icon: markRaw(WhatsappIcon),
+          description: "Whatsapp",
+          info: "+971 53837234",
+        },
+        {
+          icon: markRaw(NationalityIcon),
+          description: "Nationality",
+          info: "USA",
+        },
+        {
+          icon: markRaw(LocationIcon),
           description: "Location",
           info: "Business Bay, Dubai - UAE",
         },

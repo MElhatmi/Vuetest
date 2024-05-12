@@ -16,8 +16,20 @@
         </div>
       </div>
       <ul class="top-section-tabs">
-        <li class="top-section-tab-element active">User Details</li>
-        <li class="top-section-tab-element">Analytics</li>
+        <li
+          class="top-section-tab-element"
+          :class="{ active: activeTabIndex === 0 }"
+          @click="setActiveTabIndex(0)"
+        >
+          User Details
+        </li>
+        <li
+          class="top-section-tab-element"
+          :class="{ active: activeTabIndex === 1 }"
+          @click="setActiveTabIndex(1)"
+        >
+          Analytics
+        </li>
       </ul>
     </div>
     <div class="emptyspace"></div>
@@ -32,6 +44,19 @@ export default {
   components: {
     profileImage,
     topsectionInstagram,
+  },
+  data() {
+    return {
+      activeTabIndex: 0, // Initialize activeTabIndex
+    };
+  },
+  methods: {
+    setActiveTabIndex(index) {
+      // Update the activeTabIndex when a tab is clicked
+      this.activeTabIndex = index;
+      // Emit an event to notify the parent component about the change
+      this.$emit("active-tab-changed", this.activeTabIndex);
+    },
   },
 };
 </script>
@@ -92,6 +117,9 @@ export default {
 /*.top-section-tabs li:hover {
   color: #00a4b6;
 }*/
+.top-section-tab-element:hover {
+  cursor: pointer;
+}
 .top-section-tabs li .active {
   content: "";
   position: absolute;

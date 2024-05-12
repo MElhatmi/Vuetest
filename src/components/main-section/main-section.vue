@@ -54,7 +54,7 @@ export default {
 }
 .main-section-profileAndSocial-information {
   /* min-width: 375px;*/
-  width: 60%;
+  width: 55%;
 }
 .main-section-social-handles {
   background-color: #ffffff;
